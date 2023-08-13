@@ -6,42 +6,37 @@ import { useState } from "react";
 const TabCareer = () => {
   const [jobItem, setJobItem] = useState(job);
 
+  const allJob = () => {
+    setJobItem([...job]);
+  };
+
   const filterProduct = (curlabel) => {
     const allProduct = job.filter((val) => {
       return val.label === curlabel;
     });
     setJobItem([...allProduct]);
-    console.log(allProduct);
   };
   const filterHumanResourse = (curlabel) => {
-    console.log("cur", curlabel);
     const allHumanResourse = job.filter((val) => {
-      console.log(val.label);
       return val.label === curlabel;
     });
     setJobItem([...allHumanResourse]);
   };
 
   const filterMarketing = (curlabel) => {
-    console.log("cur", curlabel);
     const allMarketing = job.filter((val) => {
-      console.log(val.label);
       return val.label === curlabel;
     });
     setJobItem([...allMarketing]);
   };
   const filterIT = (curlabel) => {
-    console.log("cur", curlabel);
     const allIT = job.filter((val) => {
-      console.log(val.label);
       return val.label === curlabel;
     });
     setJobItem([...allIT]);
   };
   const filterSupport = (curlabel) => {
-    console.log("cur", curlabel);
     const allSupport = job.filter((val) => {
-      console.log(val.label);
       return val.label === curlabel;
     });
     setJobItem([...allSupport]);
@@ -54,7 +49,7 @@ const TabCareer = () => {
       </Section>
       <Tabs>
         <TabList>
-          <Tab>All</Tab>
+          <Tab onClick={() => allJob(job.id)}>All</Tab>
           <Tab onClick={() => filterProduct("Product")}>Product</Tab>
           <Tab onClick={() => filterHumanResourse("Human Resource")}>
             Human Resource
