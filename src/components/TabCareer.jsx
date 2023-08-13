@@ -1,4 +1,13 @@
-import { Tabs, TabList, Tab, Section, Heading, Stack } from "@carbon/react";
+import {
+  Tabs,
+  TabList,
+  Tab,
+  Section,
+  Heading,
+  Stack,
+  Column,
+  Grid,
+} from "@carbon/react";
 import CareerCard from "./CareerCard";
 import job from "./data";
 import { useState } from "react";
@@ -43,22 +52,26 @@ const TabCareer = () => {
   };
 
   return (
-    <Stack gap={3}>
-      <Section level={2}>
-        <Heading>Join Us</Heading>
-      </Section>
-      <Tabs>
-        <TabList>
-          <Tab onClick={() => allJob(job.id)}>All</Tab>
-          <Tab onClick={() => filterProduct("Product")}>Product</Tab>
-          <Tab onClick={() => filterHumanResourse("Human Resource")}>
-            Human Resource
-          </Tab>
-          <Tab onClick={() => filterMarketing("Marketing")}>Marketing</Tab>
-          <Tab onClick={() => filterIT("IT")}>IT</Tab>
-          <Tab onClick={() => filterSupport("Support")}>Support</Tab>
-        </TabList>
-      </Tabs>
+    <Stack orientation="vertical" gap={1}>
+      <Grid fullWidth>
+        <Column lg={8} md={4} sm={4}>
+          <Section level={2} className="Header">
+            <Heading>Join Us</Heading>
+          </Section>
+          <Tabs>
+            <TabList>
+              <Tab onClick={() => allJob(job.id)}>All</Tab>
+              <Tab onClick={() => filterProduct("Product")}>Product</Tab>
+              <Tab onClick={() => filterHumanResourse("Human Resource")}>
+                Human Resource
+              </Tab>
+              <Tab onClick={() => filterMarketing("Marketing")}>Marketing</Tab>
+              <Tab onClick={() => filterIT("IT")}>IT</Tab>
+              <Tab onClick={() => filterSupport("Support")}>Support</Tab>
+            </TabList>
+          </Tabs>
+        </Column>
+      </Grid>
       <CareerCard jobItem={jobItem} />
     </Stack>
   );

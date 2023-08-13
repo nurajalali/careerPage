@@ -8,7 +8,7 @@ const CareerCard = ({ jobItem }) => {
     <FlexGrid fullWidth>
       <Row>
         {jobItem.map((job) => (
-          <Column key={job.id} lg={4} md={8} sm={4}>
+          <Column key={job.id} lg={4} md={4} sm={4}>
             <ExpressiveCard
               actionIcons={[
                 {
