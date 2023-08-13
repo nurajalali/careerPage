@@ -1,14 +1,16 @@
 import { Tabs, TabList, Tab, Section, Heading, Stack } from "@carbon/react";
 import CareerCard from "./CareerCard";
-
 import job from "./data";
+import { useState } from "react";
+
 const TabCareer = () => {
+  const [jobItem, setJobItem] = useState(job);
+
   const filterProduct = (curlabel) => {
-    console.log("cur", curlabel);
     const allProduct = job.filter((val) => {
-      console.log(val.label);
       return val.label === curlabel;
     });
+    setJobItem([...allProduct]);
     console.log(allProduct);
   };
   const filterHumanResourse = (curlabel) => {
@@ -17,7 +19,7 @@ const TabCareer = () => {
       console.log(val.label);
       return val.label === curlabel;
     });
-    console.log(allHumanResourse);
+    setJobItem([...allHumanResourse]);
   };
 
   const filterMarketing = (curlabel) => {
@@ -26,7 +28,7 @@ const TabCareer = () => {
       console.log(val.label);
       return val.label === curlabel;
     });
-    console.log(allMarketing);
+    setJobItem([...allMarketing]);
   };
   const filterIT = (curlabel) => {
     console.log("cur", curlabel);
@@ -34,7 +36,7 @@ const TabCareer = () => {
       console.log(val.label);
       return val.label === curlabel;
     });
-    console.log(allIT);
+    setJobItem([...allIT]);
   };
   const filterSupport = (curlabel) => {
     console.log("cur", curlabel);
@@ -42,8 +44,9 @@ const TabCareer = () => {
       console.log(val.label);
       return val.label === curlabel;
     });
-    console.log(allSupport);
+    setJobItem([...allSupport]);
   };
+
   return (
     <Stack gap={3}>
       <Section level={2}>
@@ -61,7 +64,7 @@ const TabCareer = () => {
           <Tab onClick={() => filterSupport("Support")}>Support</Tab>
         </TabList>
       </Tabs>
-      <CareerCard />
+      <CareerCard jobItem={jobItem} />
     </Stack>
   );
 };
