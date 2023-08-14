@@ -1,6 +1,6 @@
 import { ExpressiveCard } from "@carbon/ibm-products/lib/components";
 import { ArrowRight } from "@carbon/react/icons";
-import { Grid, Column, Stack, Heading, Section } from "@carbon/react";
+import { Grid, Column } from "@carbon/react";
 import { Text } from "@carbon/react/lib/components/Text";
 
 const CareerCard = ({ jobItem }) => {
@@ -15,16 +15,10 @@ const CareerCard = ({ jobItem }) => {
                 iconDescription: "Next",
               },
             ]}
+            title={job.Title}
+            description={job.City}
           >
-            <Stack gap={5}>
-              <div>
-                <Section level={3}>
-                  <Heading>{job.Title}</Heading>
-                </Section>
-                <Text>{job.City}</Text>
-              </div>
-              <Text>{job.Condition}</Text>
-            </Stack>
+            <Text>{job.Condition}</Text>
           </ExpressiveCard>
         </Column>
       ))}
