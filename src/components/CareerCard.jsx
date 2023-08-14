@@ -10,8 +10,8 @@ const CareerCard = ({ jobItem }) => {
           <ExpressiveCard
             title={job.Title}
             description={job.City}
-            primaryButtonIcon={ArrowRight}
             primaryButtonText={job.Condition}
+            primaryButtonIcon={ArrowRight}
             primaryButtonKind="ghost"
           ></ExpressiveCard>
           <br />
