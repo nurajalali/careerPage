@@ -54,7 +54,7 @@ const TabCareer = () => {
   return (
     <Stack orientation="vertical" gap={1}>
       <Grid fullWidth>
-        <Column lg={8} md={4} sm={4}>
+        <Column lg={8} md={8} sm={4}>
           <Section level={2} className="Header">
             <Heading>Join Us</Heading>
           </Section>
