@@ -20,6 +20,7 @@ const CareerCard = ({ jobItem }) => {
           >
             <Text>{job.Condition}</Text>
           </ExpressiveCard>
+          <br />
         </Column>
       ))}
     </Grid>
