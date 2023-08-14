@@ -1,7 +1,6 @@
 import { ExpressiveCard } from "@carbon/ibm-products/lib/components";
 import { ArrowRight } from "@carbon/react/icons";
 import { Grid, Column } from "@carbon/react";
-import { Text } from "@carbon/react/lib/components/Text";
 
 const CareerCard = ({ jobItem }) => {
   return (
@@ -9,17 +8,12 @@ const CareerCard = ({ jobItem }) => {
       {jobItem.map((job) => (
         <Column key={job.id} lg={4} md={4} sm={4}>
           <ExpressiveCard
-            actionIcons={[
-              {
-                icon: ArrowRight,
-                iconDescription: "Next",
-              },
-            ]}
             title={job.Title}
             description={job.City}
-          >
-            <Text>{job.Condition}</Text>
-          </ExpressiveCard>
+            primaryButtonIcon={ArrowRight}
+            primaryButtonText={job.Condition}
+            primaryButtonKind="ghost"
+          ></ExpressiveCard>
           <br />
         </Column>
       ))}
