@@ -1,6 +1,6 @@
 import { ExpressiveCard } from "@carbon/ibm-products/lib/components";
 import { ArrowRight } from "@carbon/react/icons";
-import { Grid, Column, Button } from "@carbon/react";
+import { Grid, Column } from "@carbon/react";
 
 const CareerCard = ({ jobItem }) => {
   return (

@@ -25,6 +25,7 @@ const TabCareer = () => {
     });
     setJobItem([...allProduct]);
   };
+
   const filterHumanResourse = (curlabel) => {
     const allHumanResourse = job.filter((val) => {
       return val.label === curlabel;
@@ -53,8 +54,12 @@ const TabCareer = () => {
 
   return (
     <Stack orientation="vertical" gap={6}>
-      <Grid narrow>
-        <Column lg={{ start: 2, span: 8 }} md={8} sm={4}>
+      <Grid fullWidth>
+        <Column
+          lg={{ start: 2, span: 8 }}
+          md={{ start: 1, span: 6 }}
+          sm={{ start: 1, span: 4 }}
+        >
           <Section level={2} className="Header">
             <Heading>Join Us</Heading>
           </Section>
