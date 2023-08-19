@@ -7,9 +7,14 @@
   width: 100%;
 }
 
+.c4p--card__footer {
+  justify-content: space-between;
+}
+
 .cds--btn__icon {
   color: blue;
 }
 .button--career-card :hover {
   background-color: #0f62fe;
+  transition: 0.1s;
 }

@@ -1,10 +1,10 @@
 import "./App.scss";
-import TabCareer from "./components/TabCareer";
+import CareerTab from "./components/CareerTab";
 
 function App() {
   return (
     <>
-      <TabCareer />
+      <CareerTab />
     </>
   );
 }
