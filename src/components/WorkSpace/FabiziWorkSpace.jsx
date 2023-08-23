@@ -11,7 +11,8 @@ import ColleaguesMobile from "../../assets/images/young-colleagues-work-office-u
 import "../WorkSpace/FbiziWorkSpace.style.scss";
 const WorkSpace = () => {
   const { isMobile, isTablet, isDesktop } = useBreakpoint();
-  if (window.innerWidth > 672) {
+
+  if (isDesktop) {
     return (
       <FlexGrid fullWidth className="workspace__desktop">
         <Row className="direction-row-reverse">
@@ -60,20 +61,20 @@ const WorkSpace = () => {
         </Row>
       </FlexGrid>
     );
-  } else if (window.innerWidth <= 672 && window.innerWidth > 320) {
+  } else if (isTablet) {
     return (
       <FlexGrid fullWidth>
         <Row>
           <Stack orientation="horizontal">
-            <Column lg={2}>
-              <Stack>
+            <Column md={8}>
+              <Stack gap={"1rem"}>
                 <Section level={2}>
                   <Heading>
                     <span className="workspace-header__firstword">Fabizi </span>
                     Work Space.
                   </Heading>
                 </Section>
-                <p>
+                {/* <p>
                   We are a tech company and well aware of the importance of
                   creating a dynamic, safe and fun environment for employees to
                   thrive in. Modern design, up to date equipment and a friendly
@@ -82,7 +83,7 @@ const WorkSpace = () => {
                   we look at the members of our expanding team as members of
                   this “home” who are valued and should be properly taken care
                   of.
-                </p>
+                </p> */}
 
                 <p>
                   Joining Fabizi is all about partaking in a constant learning
@@ -92,24 +93,24 @@ const WorkSpace = () => {
                 </p>
               </Stack>
             </Column>
-            <Column lg={4}>
+            <Column md={4}>
               <img src={WorkPlaceTablet} />
             </Column>
           </Stack>
         </Row>
         <Row>
           <Stack orientation="horizontal">
-            <Column lg={2} md={2}>
+            <Column md={4}>
               <img src={BaristaTablet} />
             </Column>
-            <Column lg={2} md={2}>
+            <Column md={4}>
               <img src={ColleaguesTablet} />
             </Column>
           </Stack>
         </Row>
       </FlexGrid>
     );
-  } else if (window.innerWidth <= 320) {
+  } else if (isMobile) {
     return (
       <FlexGrid>
         <Stack gap={2}>

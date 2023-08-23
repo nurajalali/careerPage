@@ -27,19 +27,24 @@
     color: white;
   }
 
-  @media screen and (max-width: 672px) {
-    .header-picture {
-      padding-top: 111px;
-      padding-bottom: 112px;
-      color: white;
-      background-color: rgba(22, 22, 22, 0.8) !important;
-    }
-  }
-  @media screen and (max-width: 320px) {
+  @media screen and (min-width: 481px) and (max-width: 1024px) {
     .header--heading {
       font-size: 24px;
     }
     .header-picture {
+      padding: 111px 32px 112px 32px;
+      height: 378px;
+      color: white;
+      background-color: rgba(22, 22, 22, 0.8) !important;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .header--heading {
+      font-size: 16px;
+    }
+    .header-picture {
+      height: 569px;
+      padding: 160px 32px;
       padding-top: 160px;
       padding-bottom: 160px;
       color: white;

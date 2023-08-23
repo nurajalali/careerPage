@@ -30,9 +30,9 @@ const CareerTab = () => {
     <Stack orientation="vertical" gap={6}>
       <Grid fullWidth>
         <Column
-          lg={{ start: 2, span: 8 }}
-          md={{ start: 1, span: 6 }}
-          sm={{ start: 1, span: 4 }}
+          lg={{ span: 8, offset: 1 }}
+          md={{ span: 6, offset: 0 }}
+          sm={{ span: 4, offset: 0 }}
         >
           <Section level={2} className="Header">
             <Heading>Join Us</Heading>

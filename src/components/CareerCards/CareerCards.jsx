@@ -16,7 +16,6 @@ const CareerCards = ({ jobItem }) => {
                 href: "#",
                 icon: ArrowRight,
                 iconDescription: "Next",
-                id: "1",
               },
             ]}
             primaryButtonText={job.Condition}
