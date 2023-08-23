@@ -63,18 +63,21 @@ const WorkSpace = () => {
     );
   } else if (isTablet) {
     return (
-      <FlexGrid fullWidth>
-        <Row>
-          <Stack orientation="horizontal">
-            <Column md={8}>
-              <Stack gap={"1rem"}>
-                <Section level={2}>
-                  <Heading>
-                    <span className="workspace-header__firstword">Fabizi </span>
-                    Work Space.
-                  </Heading>
-                </Section>
-                {/* <p>
+      <FlexGrid fullWidth className="workspace-tablet">
+        <Stack gap={"2rem"}>
+          <Row>
+            <Stack orientation="horizontal">
+              <Column md={8}>
+                <Stack gap={"1rem"}>
+                  <Section level={2}>
+                    <Heading>
+                      <span className="workspace-header__firstword">
+                        Fabizi{" "}
+                      </span>
+                      Work Space.
+                    </Heading>
+                  </Section>
+                  {/* <p>
                   We are a tech company and well aware of the importance of
                   creating a dynamic, safe and fun environment for employees to
                   thrive in. Modern design, up to date equipment and a friendly
@@ -85,35 +88,36 @@ const WorkSpace = () => {
                   of.
                 </p> */}
 
-                <p>
-                  Joining Fabizi is all about partaking in a constant learning
-                  procedure, where you are valued and you can shine as bright as
-                  you want. If you dream big and want a supportive environment,
-                  Fabizi might be your new home.
-                </p>
-              </Stack>
-            </Column>
-            <Column md={4}>
-              <img src={WorkPlaceTablet} />
-            </Column>
-          </Stack>
-        </Row>
-        <Row>
-          <Stack orientation="horizontal">
-            <Column md={4}>
-              <img src={BaristaTablet} />
-            </Column>
-            <Column md={4}>
-              <img src={ColleaguesTablet} />
-            </Column>
-          </Stack>
-        </Row>
+                  <p>
+                    Joining Fabizi is all about partaking in a constant learning
+                    procedure, where you are valued and you can shine as bright
+                    as you want. If you dream big and want a supportive
+                    environment, Fabizi might be your new home.
+                  </p>
+                </Stack>
+              </Column>
+              <Column md={4}>
+                <img src={WorkPlaceTablet} />
+              </Column>
+            </Stack>
+          </Row>
+          <Row>
+            <Stack orientation="horizontal" gap={"2rem"}>
+              <Column md={4}>
+                <img src={BaristaTablet} />
+              </Column>
+              <Column md={4}>
+                <img src={ColleaguesTablet} />
+              </Column>
+            </Stack>
+          </Row>
+        </Stack>
       </FlexGrid>
     );
   } else if (isMobile) {
     return (
-      <FlexGrid>
-        <Stack gap={2}>
+      <FlexGrid fullWidth className="workspace-mobile">
+        <Stack gap={"1rem"}>
           <Row>
             <Column sm={4}>
               <Section level={3}>
