@@ -1,0 +1,32 @@
+.fabiziWorkSpace {
+  padding-top: 96px;
+}
+@media only screen and (max-width: 1060px) {
+  .flex-item:nth-of-type(1) {
+    order: 2;
+  }
+  .flex-item:nth-of-type(2) {
+    order: 3;
+  }
+  .flex-item:nth-of-type(3) {
+    order: 1;
+  }
+  .flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .order-img:nth-of-type(1) {
+    order: 2;
+  }
+  .order-img:nth-of-type(1) {
+    order: 1;
+  }
+}
+
+@media only screen and (min-width: 671px) {
+  .colleage__image,
+  .barista__image {
+    display: none;
+  }
+}

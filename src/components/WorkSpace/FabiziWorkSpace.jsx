@@ -18,14 +18,23 @@ const WorkSpace = () => {
         <Row className="direction-row-reverse">
           <Stack orientation="horizontal">
             <Column lg={4}>
-              <img src={WorkPlaceDesktop} />
+              <img
+                srcSet={` ${WorkPlaceTablet}   1320w, ${WorkPlaceDesktop} 1980w`}
+                src={WorkPlaceDesktop}
+              />
             </Column>
             <Stack gap={"2rem"} orientation="vertical">
-              <Column lg={4}>
-                <img src={BaristaDesktop} />
+              <Column lg={4} md={2}>
+                <img
+                  srcSet={` ${BaristaTablet}   1320w, ${BaristaDesktop} 1980w`}
+                  src={BaristaDesktop}
+                />
               </Column>
               <Column lg={4}>
-                <img src={ColleaguesDesktop} />
+                <img
+                  srcSet={` ${ColleaguesTablet}   1320w, ${ColleaguesDesktop} 1980w`}
+                  src={ColleaguesDesktop}
+                />
               </Column>
             </Stack>
           </Stack>
@@ -72,7 +81,7 @@ const WorkSpace = () => {
                   <Section level={2}>
                     <Heading>
                       <span className="workspace-header__firstword">
-                        Fabizi{" "}
+                        Fabizi
                       </span>
                       Work Space.
                     </Heading>
