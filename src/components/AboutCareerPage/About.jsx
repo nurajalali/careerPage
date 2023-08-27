@@ -1,17 +1,16 @@
 import { Grid, Column, Button } from "@carbon/react";
-import { ArrowRight } from "@carbon/react/icons";
-import person from "../../assets/flagging-taxi.svg";
+import { ArrowRight, FlaggingTaxi } from "@carbon/react/icons";
 import "../AboutCareerPage/About.style.scss";
 const About = () => {
   return (
     <Grid narrow className="careerpage__about">
-      <Column lg={{ span: 2, offset: 0 }} md={4} sm={4}>
-        <img src={person} />
+      <Column lg={4} md={8} sm={4}>
+        <FlaggingTaxi size={30} />
       </Column>
-      <Column lg={4} md={4} sm={4}>
+      <Column lg={8} md={8} sm={4}>
         Read how Fabizi started its journey as a startup!
       </Column>
-      <Column lg={{ span: 4, offset: 12 }} md={4} sm={4}>
+      <Column lg={4} md={4} sm={4}>
         <Button
           className="Header__btn"
           renderIcon={ArrowRight}

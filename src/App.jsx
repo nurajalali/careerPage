@@ -1,17 +1,21 @@
 import "./App.scss";
 import CareerTab from "./components/CareerCards/CareerTab";
-import WorkSpaceT from "./components/WorkSpace/FabiziWorkSpaceT";
+import WorkSpace from "./components/WorkSpace/FabiziWorkSpace";
 import Header from "./components/Header/Header";
-// import FabiziCulture from "./components/FabiziCulture/FabiziCulture";
+import FabiziCulture from "./components/FabiziCulture/FabiziCulture";
+import Pekrs from "./components/PERKS/Pekrs";
 import About from "./components/AboutCareerPage/About";
+import Footer from "./components/Footer/Footer";
 function App() {
   return (
     <>
       <Header />
-      {/* <FabiziCulture/> */}
-      <WorkSpaceT />
+      <FabiziCulture />
+      <WorkSpace />
       <CareerTab />
+      <Pekrs />
       <About />
+      <Footer />
     </>
   );
 }

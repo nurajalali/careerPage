@@ -1,20 +1,41 @@
-.workspace__desktop {
+.fabiziWorkSpace {
   padding-top: 96px;
-  padding-bottom: 96px;
-
-  p {
-    font-size: 14px;
+  padding-left: 40px;
+  padding-right: 40px;
+  .flex-row {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
   }
-  .workspace-header__firstword {
-    color: #0f62fe;
+}
+@media only screen and (max-width: 1060px) {
+  .flex-item:nth-of-type(1) {
+    order: 2;
+  }
+  .flex-item:nth-of-type(2) {
+    order: 3;
+  }
+  .flex-item:nth-of-type(3) {
+    order: 1;
+  }
+  .flex-row {
+    padding: 0;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between;
+  }
+
+  .order-img:nth-of-type(1) {
+    order: 2;
+  }
+  .order-img:nth-of-type(1) {
+    order: 1;
   }
 }
 
-.workspace-tablet {
-  padding: 64px 32px;
+@media only screen and (min-width: 671px) {
+  .colleage__image,
+  .barista__image {
+    display: none;
+  }
 }
-
-.workspace-mobile {
-  padding: 48px 16px;
-}
-
