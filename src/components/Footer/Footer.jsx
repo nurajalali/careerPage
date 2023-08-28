@@ -23,31 +23,44 @@ const Footer = () => {
           <FlexGrid>
             <Row>
               <Column>
-                <Section level={1}>
-                  <Heading>Fabizi</Heading>
-                </Section>
-                <p>
-                  Fabizi is the first “real” all-in-one management solution for
-                  hospitality outlets. Manage your whole business from
-                  interactions with clients, to the kitchen, to inventory,
-                  through a single service that’s customized to your needs. Join
-                  our growing family now and experience what it feels like to be
-                  a manager from the future, today!
-                </p>
-                <Stack gap={6} orientation="horizontal">
+                <Stack gap={4}>
+                  <Section level={1}>
+                    <Heading>Fabizi</Heading>
+                  </Section>
+                  <p>
+                    Fabizi is the first “real” all-in-one management solution
+                    for hospitality outlets. Manage your whole business from
+                    interactions with clients, to the kitchen, to inventory,
+                    through a single service that’s customized to your needs.
+                    Join our growing family now and experience what it feels
+                    like to be a manager from the future, today!
+                  </p>
+                </Stack>
+                <Stack gap={2} orientation="horizontal">
                   <LogoTwitter />
                   <LogoFacebook />
                   <LogoYoutube />
                   <LogoLinkedin />
                   <LogoInstagram />
                 </Stack>
+
+                <FlexGrid fullWidth className="show">
+                  <Row>
+                    <Column>
+                      <Dropdown items={["English", "Option 2", "Option 3"]} />
+                    </Column>
+                    <Column>
+                      <Dropdown items={["Dollar", "Option 2", "Option 3"]} />
+                    </Column>
+                  </Row>
+                </FlexGrid>
               </Column>
             </Row>
           </FlexGrid>
           <br />
         </Column>
 
-        <Column lg={3} md={4}>
+        <Column lg={3} md={4} sm={2}>
           <FlexGrid>
             <Row>
               <Column>
@@ -69,7 +82,7 @@ const Footer = () => {
           <br />
         </Column>
 
-        <Column lg={3} md={4}>
+        <Column lg={3} md={4} sm={2}>
           <FlexGrid>
             <Row>
               <Column>
@@ -99,7 +112,7 @@ const Footer = () => {
           <br />
         </Column>
 
-        <Column lg={2} md={4}>
+        <Column lg={2} md={4} sm={2}>
           <FlexGrid>
             <Row>
               <Column>
@@ -118,7 +131,7 @@ const Footer = () => {
           <br />
         </Column>
 
-        <Column lg={2} md={4}>
+        <Column lg={2} md={4} sm={2}>
           <FlexGrid>
             <Row>
               <Column>
@@ -135,7 +148,7 @@ const Footer = () => {
       </Row>
 
       <Row style={{ margin: "56px" }}>
-        <Column lg={{ span: 3, offset: 1 }}>
+        <Column lg={{ span: 3, offset: 1 }} md={4} sm={4}>
           <p>Modern Land Trading LLC.</p>
           <p>
             UAE, Office1602, Damas Tower, Rega Al Buteen, Al Maktoum Street,
@@ -144,7 +157,7 @@ const Footer = () => {
           <p>+971 50 142 8046</p>
           <p>Fabizi@gmail.com</p>
         </Column>
-        <Column lg={{ span: 3, offset: 1 }}>
+        <Column lg={{ span: 3, offset: 1 }} md={4} sm={4}>
           <p>Código Conciso Lda</p>
           <p>
             Portugal, Estrada Nacional 4 - Retiro do Bom Gosto, N 8 7080-111
@@ -153,7 +166,7 @@ const Footer = () => {
           <p>+351 9200 53535</p>
           <p>Fabizi@gmail.com</p>
         </Column>
-        <Column lg={{ span: 3, offset: 3 }}>
+        <Column lg={{ span: 4, offset: 3 }} md={4} className="hide">
           <Dropdown items={["English", "Option 2", "Option 3"]} />
           <br />
           <Dropdown items={["Dollar", "Option 2", "Option 3"]} />

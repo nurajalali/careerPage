@@ -53,7 +53,7 @@ const Header = () => {
               header--heading"
                 >
                   With every talent you have,
-                  <span className="header--heading__boldword"> Fabizi</span>
+                  <span className="header--heading__boldword">Fabizi</span>
                   needs you!
                 </Heading>
               </Section>
