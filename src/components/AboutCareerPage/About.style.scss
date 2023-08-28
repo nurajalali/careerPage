@@ -1,9 +1,14 @@
-.careerpage__about {
-  background-color: #161616;
-  color: white;
+.fabizi__about {
+  padding-top: 96px;
+}
+.about {
+  padding-top: 64px;
+  padding-bottom: 64px;
   align-items: center;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  height: 190px;
-  width: 1300px;
+  @media screen and (max-width: 1036px) {
+    padding-left: 23px;
+  }
+}
+.about-btn {
+  color: white;
 }
