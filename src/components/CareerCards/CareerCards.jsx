@@ -1,6 +1,7 @@
 import { ExpressiveCard } from "@carbon/ibm-products/lib/components";
 import { ArrowRight } from "@carbon/react/icons";
 import { Grid, Column } from "@carbon/react";
+import "../CareerCards/JoinUS.style.scss";
 
 const CareerCards = ({ jobItem }) => {
   return (
@@ -15,7 +16,6 @@ const CareerCards = ({ jobItem }) => {
               {
                 href: "#",
                 icon: ArrowRight,
-                iconDescription: "Next",
               },
             ]}
             primaryButtonText={job.Condition}

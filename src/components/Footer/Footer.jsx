@@ -18,8 +18,8 @@ import "../Footer/Footer.style.scss";
 const Footer = () => {
   return (
     <FlexGrid fullWidth className="footerPage">
-      <Row style={{ margin: "1rem" }}>
-        <Column lg={{ span: 4, offset: 1 }} md={8} sm={4}>
+      <Row>
+        <Column lg={5} md={8} sm={4}>
           <FlexGrid>
             <Row>
               <Column>
@@ -35,32 +35,39 @@ const Footer = () => {
                     Join our growing family now and experience what it feels
                     like to be a manager from the future, today!
                   </p>
+                  <div>
+                    <Stack gap={7} orientation="horizontal">
+                      <LogoTwitter size={20} />
+                      <LogoFacebook size={20} />
+                      <LogoYoutube size={20} />
+                      <LogoLinkedin size={20} />
+                      <LogoInstagram size={20} />
+                    </Stack>
+                  </div>
+                  <div>
+                    <FlexGrid fullWidth className="show gap">
+                      <Row className="gap">
+                        <Column md={4} sm={4}>
+                          <Dropdown
+                            items={["English", "Option 2", "Option 3"]}
+                          />
+                        </Column>
+                        <Column md={4} sm={4}>
+                          <Dropdown
+                            items={["Dollar", "Option 2", "Option 3"]}
+                          />
+                        </Column>
+                      </Row>
+                    </FlexGrid>
+                  </div>
                 </Stack>
-                <Stack gap={2} orientation="horizontal">
-                  <LogoTwitter />
-                  <LogoFacebook />
-                  <LogoYoutube />
-                  <LogoLinkedin />
-                  <LogoInstagram />
-                </Stack>
-
-                <FlexGrid fullWidth className="show">
-                  <Row>
-                    <Column>
-                      <Dropdown items={["English", "Option 2", "Option 3"]} />
-                    </Column>
-                    <Column>
-                      <Dropdown items={["Dollar", "Option 2", "Option 3"]} />
-                    </Column>
-                  </Row>
-                </FlexGrid>
               </Column>
             </Row>
           </FlexGrid>
           <br />
         </Column>
 
-        <Column lg={3} md={4} sm={2}>
+        <Column lg={2} md={4} sm={2}>
           <FlexGrid>
             <Row>
               <Column>
@@ -82,7 +89,7 @@ const Footer = () => {
           <br />
         </Column>
 
-        <Column lg={3} md={4} sm={2}>
+        <Column lg={4} md={4} sm={2}>
           <FlexGrid>
             <Row>
               <Column>
@@ -145,28 +152,30 @@ const Footer = () => {
             </Row>
           </FlexGrid>
         </Column>
-      </Row>
 
-      <Row style={{ margin: "56px" }}>
-        <Column lg={{ span: 3, offset: 1 }} md={4} sm={4}>
-          <p>Modern Land Trading LLC.</p>
-          <p>
-            UAE, Office1602, Damas Tower, Rega Al Buteen, Al Maktoum Street,
-            Deira, Dubai, PO Box: 185916
-          </p>
-          <p>+971 50 142 8046</p>
+        <Column lg={5} md={4} sm={4}>
+          <Stack gap={4}>
+            <p>Modern Land Trading LLC.</p>
+            <p>
+              UAE, Office1602, Damas Tower, Rega Al Buteen, Al Maktoum Street,
+              Deira, Dubai, PO Box: 185916
+            </p>
+            <p>+971 50 142 8046</p>
+          </Stack>
           <p>Fabizi@gmail.com</p>
         </Column>
-        <Column lg={{ span: 3, offset: 1 }} md={4} sm={4}>
-          <p>Código Conciso Lda</p>
-          <p>
-            Portugal, Estrada Nacional 4 - Retiro do Bom Gosto, N 8 7080-111
-            Vendas Novas
-          </p>
-          <p>+351 9200 53535</p>
+        <Column lg={4} md={4} sm={4}>
+          <Stack gap={4}>
+            <p>Código Conciso Lda</p>
+            <p>
+              Portugal, Estrada Nacional 4 - Retiro do Bom Gosto, N 8 7080-111
+              Vendas Novas
+            </p>
+            <p>+351 9200 53535</p>
+          </Stack>
           <p>Fabizi@gmail.com</p>
         </Column>
-        <Column lg={{ span: 4, offset: 3 }} md={4} className="hide">
+        <Column lg={{ span: 4, offset: 2 }} md={4} className="hide">
           <Dropdown items={["English", "Option 2", "Option 3"]} />
           <br />
           <Dropdown items={["Dollar", "Option 2", "Option 3"]} />

@@ -1,17 +1,16 @@
 .workspace {
   @media only screen and (min-width: 1260px) {
     .padding {
-      padding-top: 96px;
+      padding: 96px 10px 96px 20px;
     }
     .flex-column {
       display: flex;
       flex-direction: column !important;
-      gap: 2rem;
+      gap: 1rem !important;
     }
   }
   @media only screen and (max-width: 1060px) {
     .padding {
-      padding-right: 1rem;
       padding-top: 64px;
       padding-bottom: 64px;
     }
@@ -33,7 +32,6 @@
     .flex-row {
       display: flex !important;
       flex-direction: row !important;
-      justify-content: space-between;
     }
 
     .order-img:nth-of-type(1) {

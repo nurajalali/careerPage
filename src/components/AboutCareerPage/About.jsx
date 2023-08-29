@@ -6,13 +6,13 @@ const About = () => {
     <FlexGrid fullWidth className="fabizi__about">
       <Theme theme="g100">
         <Row className="about">
-          <Column lg={{ span: 2, offset: 1 }} md={0} sm={0}>
+          <Column lg={{ span: 1, offset: 1 }} md={0} sm={0}>
             <FlaggingTaxi size={30} />
           </Column>
-          <Column lg={8} md={8} sm={3}>
+          <Column lg={8} md={8} sm={4}>
             Read how Fabizi started its journey as a startup!
           </Column>
-          <Column lg={4} md={4} sm={3}>
+          <Column lg={4} md={4} sm={4}>
             <br />
             <Button
               className="about-btn"
