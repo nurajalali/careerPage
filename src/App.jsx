@@ -1,20 +1,20 @@
 import "./App.scss";
-import CareerTab from "./components/CareerCards/CareerTab";
-import WorkSpaceT from "./components/WorkSpace/FabiziWorkSpace";
+import JoinFabiziSections from "./components/SectionFour/JoinFabiziSections";
+import FabiziWorkSpace from "./components/SectionThree/FabiziWorkSpace";
 import Header from "./components/Header/Header";
-import FabiziCulture from "./components/FabiziCulture/FabiziCulture";
-import Pekrs from "./components/PERKS/Pekrs";
-import About from "./components/AboutCareerPage/About";
+import FabiziCulture from "./components/SectionTwo/FabiziCulture";
+import FabiziPerksAndBenefits from "./components/SectionFive/FabiziPerksAndBenefits";
+import AboutFabizi from "./components/SectionSix/AboutFabizi";
 import Footer from "./components/Footer/Footer";
 function App() {
   return (
     <>
       <Header />
       <FabiziCulture />
-      <WorkSpaceT />
-      <CareerTab />
-      <Pekrs />
-      <About />
+      <FabiziWorkSpace />
+      <JoinFabiziSections />
+      <FabiziPerksAndBenefits />
+      <AboutFabizi />
       <Footer />
     </>
   );

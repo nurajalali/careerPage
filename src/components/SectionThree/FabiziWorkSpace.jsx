@@ -1,32 +1,52 @@
 import { FlexGrid, Row, Column, Section, Heading, Stack } from "@carbon/react";
-import "../WorkSpace/FbiziWorkSpace.style.scss";
 import WorkPlaceDesktop from "../../assets/images/rectangle-desktop.jpg";
 import BaristaDesktop from "../../assets/images/barista-cafe-making-coffee-preparation-service-concept-desktop.jpg";
 import ColleaguesDesktop from "../../assets/images/young-colleagues-work-office-using-computers-desktop.jpg";
 import useBreakpoint from "../Hooks/useBreakpoint";
+import "../SectionThree/FbiziWorkSpace.style.scss";
 
-const WorkSpaceT = () => {
+const FabiziWorkSpace = () => {
   const { isMobile, isTablet, isDesktop } = useBreakpoint();
   return (
     <FlexGrid
       fullWidth
       condensed={isDesktop ? true : isTablet ? false : isMobile ? false : ""}
-      className="workspace"
+      className="Containor__workspaceSection"
     >
-      <Row className="padding">
-        <Column className="flex-item" lg={5} md={4} sm={0}>
+      <Row className="Containor__workspaceSection-space">
+        <Column
+          className="Containor__workspaceSection-tabletStyle"
+          lg={5}
+          md={4}
+          sm={0}
+        >
           <img
             style={{ width: "100%", height: "89.5%" }}
             src={WorkPlaceDesktop}
           />
         </Column>
-        <Column className="flex-item" lg={5} md={8} sm={0}>
+        <Column
+          className="Containor__workspaceSection-tabletStyle"
+          lg={5}
+          md={8}
+          sm={0}
+        >
           <FlexGrid>
-            <Row className="flex-column flex-row">
-              <Column className="order-img " lg={16} md={4} sm={0}>
+            <Row className="Containor__workspaceSection-desktop-flexColumn Containor__workspaceSection-tabletStyle-flexRow">
+              <Column
+                className="Containor__workspaceSection-tabletStyle-orderImg "
+                lg={16}
+                md={4}
+                sm={0}
+              >
                 <img style={{ width: "100%" }} src={BaristaDesktop} />
               </Column>
-              <Column className="order-img " lg={16} md={4} sm={0}>
+              <Column
+                className="Containor__workspaceSection-tabletStyle-orderImg "
+                lg={16}
+                md={4}
+                sm={0}
+              >
                 <img style={{ width: "100%" }} src={ColleaguesDesktop} />
               </Column>
             </Row>
@@ -42,7 +62,7 @@ const WorkSpaceT = () => {
             <img
               src={ColleaguesDesktop}
               style={{ width: "100%" }}
-              className="colleage__image"
+              className="Containor__workspaceSection-mobileStyle-colleageImage"
             />
             <p>
               We are a tech company and well aware of the importance of creating
@@ -57,7 +77,7 @@ const WorkSpaceT = () => {
             <img
               style={{ width: "100%" }}
               src={BaristaDesktop}
-              className="barista__image"
+              className="Containor__workspaceSection-mobileStyle-baristaImage"
             />
             <p>
               Joining Fabizi is all about partaking in a constant learning
@@ -72,4 +92,4 @@ const WorkSpaceT = () => {
   );
 };
 
-export default WorkSpaceT;
+export default FabiziWorkSpace;

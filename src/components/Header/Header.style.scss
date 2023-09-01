@@ -1,5 +1,5 @@
 .Header {
-  .header-background {
+  .Header--background-position-image {
     z-index: -1;
     width: 100%;
     height: 100%;
@@ -7,19 +7,19 @@
     object-fit: cover;
     top: 0;
   }
-  .header-picture {
+  .Header--background-style-image {
     height: 891px;
     padding-top: 350px;
     color: white;
     background-color: rgba(22, 22, 22, 0.8) !important;
   }
 
-  .header--heading__boldword {
+  .Header__heading--boldFabiziWord {
     color: #0f62fe;
     margin: 0 10px;
   }
 
-  .header-picture p {
+  .Header--background-style-image p {
     font-size: 14px;
     text-align: justify;
   }
@@ -29,10 +29,10 @@
   }
 
   @media screen and (min-width: 481px) and (max-width: 1024px) {
-    .header--heading {
+    .Header__heading {
       font-size: 24px;
     }
-    .header-picture {
+    .Header--background-style-image {
       padding: 111px 32px 112px 32px;
       height: 378px;
       color: white;
@@ -40,10 +40,10 @@
     }
   }
   @media screen and (max-width: 480px) {
-    .header--heading {
+    .Header__heading {
       font-size: 16px;
     }
-    .header-picture {
+    .Header--background-style-image {
       height: 569px;
       padding: 160px 32px;
       padding-top: 160px;

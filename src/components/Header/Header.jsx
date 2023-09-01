@@ -23,7 +23,7 @@ const Header = () => {
     >
       {
         <img
-          className="header-background "
+          className="Header--background-position-image "
           src={
             isDesktop
               ? backgroundDesktop
@@ -35,7 +35,7 @@ const Header = () => {
           }
         />
       }
-      <FlexGrid fullWidth className="header-picture">
+      <FlexGrid fullWidth className="Header--background-style-image">
         <Row>
           <Stack
             gap={
@@ -50,10 +50,12 @@ const Header = () => {
               <Section>
                 <Heading
                   className="
-              header--heading"
+              Header__heading"
                 >
                   With every talent you have,
-                  <span className="header--heading__boldword">Fabizi</span>
+                  <span className="Header__heading--boldFabiziWord">
+                    Fabizi
+                  </span>
                   needs you!
                 </Heading>
               </Section>

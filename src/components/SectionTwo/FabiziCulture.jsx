@@ -10,11 +10,11 @@ import {
   IbmWatsonAssistant,
   GameConsole,
 } from "@carbon/react/icons";
-import "../FabiziCulture/FabiziCulture.style.scss";
+import "../SectionTwo/FabiziCulture.style.scss";
 
 const FabiziCulture = () => {
   return (
-    <FlexGrid fullWidth className="fabiziCulture">
+    <FlexGrid fullWidth className="Container__cultureSection">
       <Row>
         <Column
           lg={{ span: 8, offset: 1 }}
@@ -23,7 +23,7 @@ const FabiziCulture = () => {
         >
           <Section>
             <Heading>
-              <span className="fabiziCulture__header">Fabizi</span> Culture
+              <span className="Header__cultureSection">Fabizi</span> Culture
             </Heading>
           </Section>
         </Column>

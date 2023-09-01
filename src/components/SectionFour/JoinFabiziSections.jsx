@@ -8,11 +8,11 @@ import {
   Column,
   Grid,
 } from "@carbon/react";
-import CareerCards from "./CareerCards";
+import JoinFabiziCards from "./JoinFabiziCards";
 import job from "./data";
 import { useState } from "react";
 
-const CareerTab = () => {
+const JoinFabiziSections = () => {
   const [jobItem, setJobItem] = useState(job);
 
   const allJob = () => {
@@ -51,9 +51,9 @@ const CareerTab = () => {
           </Tabs>
         </Column>
       </Grid>
-      <CareerCards jobItem={jobItem} />
+      <JoinFabiziCards jobItem={jobItem} />
     </Stack>
   );
 };
 
-export default CareerTab;
+export default JoinFabiziSections;

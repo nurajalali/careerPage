@@ -17,7 +17,7 @@ import {
 import "../Footer/Footer.style.scss";
 const Footer = () => {
   return (
-    <FlexGrid fullWidth className="footerPage">
+    <FlexGrid fullWidth className="Footer">
       <Row>
         <Column lg={5} md={8} sm={4}>
           <FlexGrid>
@@ -45,12 +45,13 @@ const Footer = () => {
                     </Stack>
                   </div>
                   <div>
-                    <FlexGrid fullWidth className="show gap">
+                    <FlexGrid fullWidth className="Dropdown--show ">
                       <Row className="gap">
                         <Column md={4} sm={4}>
                           <Dropdown
                             items={["English", "Option 2", "Option 3"]}
                           />
+                          <br />
                         </Column>
                         <Column md={4} sm={4}>
                           <Dropdown
@@ -163,7 +164,10 @@ const Footer = () => {
             <p>+971 50 142 8046</p>
           </Stack>
           <p>Fabizi@gmail.com</p>
+          <br />
+          <hr className="Content__line" />
         </Column>
+
         <Column lg={4} md={4} sm={4}>
           <Stack gap={4}>
             <p>Código Conciso Lda</p>
@@ -174,8 +178,10 @@ const Footer = () => {
             <p>+351 9200 53535</p>
           </Stack>
           <p>Fabizi@gmail.com</p>
+          <br />
+          <hr className="Content__line" />
         </Column>
-        <Column lg={{ span: 4, offset: 2 }} md={4} className="hide">
+        <Column lg={{ span: 4, offset: 2 }} md={4} className="Dropdown--hide ">
           <Dropdown items={["English", "Option 2", "Option 3"]} />
           <br />
           <Dropdown items={["Dollar", "Option 2", "Option 3"]} />

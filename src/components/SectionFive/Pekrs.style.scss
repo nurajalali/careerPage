@@ -1,0 +1,14 @@
+.Conatinar {
+  padding-top: 96px;
+}
+@media screen and (max-width: 1036px) {
+  .Conatinar {
+    padding-top: 64px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Conatinar {
+    padding-top: 48px;
+  }
+}

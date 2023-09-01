@@ -1,0 +1,18 @@
+.Header__cultureSection {
+  color: #0f62fe;
+}
+@media only screen and (min-width: 1036px) {
+  .Container__cultureSection {
+    padding-top: 96px;
+  }
+}
+@media only screen and (max-width: 1036px) {
+  .Container__cultureSection {
+    padding-top: 64px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .Container__cultureSection {
+    padding-top: 48px;
+  }
+}

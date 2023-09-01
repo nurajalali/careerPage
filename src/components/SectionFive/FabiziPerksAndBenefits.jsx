@@ -9,11 +9,11 @@ import {
   GroupAccess,
   Friendship,
 } from "@carbon/react/icons";
-import "../PERKS/Pekrs.style.scss";
+import "../SectionFive/Pekrs.style.scss";
 
-const Pekrs = () => {
+const FabiziPerksAndBenefits = () => {
   return (
-    <FlexGrid fullWidth className="Pekrs">
+    <FlexGrid fullWidth className="Conatinar">
       <Row>
         <Column
           lg={{ span: 8, offset: 1 }}
@@ -135,4 +135,4 @@ const Pekrs = () => {
   );
 };
 
-export default Pekrs;
+export default FabiziPerksAndBenefits;
