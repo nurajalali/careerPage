@@ -21,7 +21,7 @@ const FabiziWorkSpace = () => {
           sm={0}
         >
           <img
-            style={{ width: "100%", height: "89.5%" }}
+            style={{ width: "100%", height: "88%" }}
             src={WorkPlaceDesktop}
           />
         </Column>
@@ -56,7 +56,10 @@ const FabiziWorkSpace = () => {
         <Column lg={6} md={4} sm={4}>
           <Stack gap={"1rem"}>
             <Section level={1}>
-              <Heading>Fabizi Work Space.</Heading>
+              <Heading className="Header__workSpace">
+                <span className="Header__workSpace--firstWord">Fabizi</span>
+                Work Space.
+              </Heading>
             </Section>
 
             <img

@@ -11,6 +11,7 @@ import {
 import JoinFabiziCards from "./JoinFabiziCards";
 import job from "./data";
 import { useState } from "react";
+import "../SectionFour/JoinUS.style.scss";
 
 const JoinFabiziSections = () => {
   const [jobItem, setJobItem] = useState(job);
@@ -29,13 +30,9 @@ const JoinFabiziSections = () => {
   return (
     <Stack orientation="vertical" gap={6}>
       <Grid fullWidth>
-        <Column
-          lg={{ span: 8, offset: 1 }}
-          md={{ span: 6, offset: 0 }}
-          sm={{ span: 4, offset: 0 }}
-        >
-          <Section level={2} className="Header">
-            <Heading>Join Us</Heading>
+        <Column lg={{ span: 8, offset: 1 }} md={6} sm={4}>
+          <Section level={1}>
+            <Heading className="Header__heading">Join Us</Heading>
           </Section>
           <Tabs>
             <TabList>

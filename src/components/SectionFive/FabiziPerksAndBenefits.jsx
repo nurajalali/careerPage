@@ -15,14 +15,17 @@ const FabiziPerksAndBenefits = () => {
   return (
     <FlexGrid fullWidth className="Conatinar">
       <Row>
-        <Column
-          lg={{ span: 8, offset: 1 }}
-          md={{ span: 6, offset: 0 }}
-          sm={{ span: 4, offset: 0 }}
-        >
-          <Section>
-            <Heading>PERKS & BENEFITS</Heading>
+        <Column lg={{ span: 17, offset: 1 }} md={8} sm={4}>
+          <Section level={1}>
+            <Heading className="Header--content">PERKS & BENEFITS</Heading>
           </Section>
+        </Column>
+        <Column lg={{ span: 17, offset: 1 }} md={8} sm={4}>
+          <p>
+            In publishing and graphic design, Lorem ipsum is a placeholder text
+            commonly used to demonstrate the visual form of a document or a
+            typeface
+          </p>
         </Column>
       </Row>
       <br />

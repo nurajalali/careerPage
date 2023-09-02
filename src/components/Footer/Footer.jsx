@@ -25,7 +25,10 @@ const Footer = () => {
               <Column>
                 <Stack gap={4}>
                   <Section level={1}>
-                    <Heading>Fabizi</Heading>
+                    <Heading className="Header--content">
+                      Fabiz{" "}
+                      <span className="Header--content--styleLetter">i</span>
+                    </Heading>
                   </Section>
                   <p>
                     Fabizi is the first “real” all-in-one management solution

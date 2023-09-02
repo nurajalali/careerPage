@@ -22,8 +22,9 @@ const FabiziCulture = () => {
           sm={{ span: 4, offset: 0 }}
         >
           <Section>
-            <Heading>
-              <span className="Header__cultureSection">Fabizi</span> Culture
+            <Heading className="Header__cultureSection">
+              <span className="Header__cultureSection__firstWord">Fabizi</span>{" "}
+              Culture
             </Heading>
           </Section>
         </Column>
@@ -78,7 +79,6 @@ const FabiziCulture = () => {
           <br />
         </Column>
       </Row>
-      <br />
       <Row>
         <Column lg={4} md={8} sm={4}>
           <ExpressiveCard
