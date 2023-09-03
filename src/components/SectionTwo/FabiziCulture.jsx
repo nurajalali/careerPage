@@ -18,8 +18,9 @@ const FabiziCulture = () => {
       <Row>
         <Column lg={{ span: 8, offset: 1 }} md={6} sm={4}>
           <Section level={1}>
-            <Heading>
-              <span className="Header__cultureSection">Fabizi</span> Culture
+            <Heading className="Header__cultureSection">
+              <span className="Header__cultureSection__firstWord">Fabizi</span>{" "}
+              Culture
             </Heading>
           </Section>
         </Column>
