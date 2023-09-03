@@ -90,7 +90,6 @@ const FabiziCulture = () => {
           <br />
         </Column>
       </Row>
-
       <Row>
         <Column lg={4} md={8} sm={4}>
           <ExpressiveCard

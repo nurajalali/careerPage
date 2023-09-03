@@ -11,6 +11,7 @@ import {
 import JoinFabiziCards from "./JoinFabiziCards";
 import job from "./data";
 import { useState } from "react";
+import "../SectionFour/JoinUS.style.scss";
 
 const JoinFabiziSections = () => {
   const [jobItem, setJobItem] = useState(job);

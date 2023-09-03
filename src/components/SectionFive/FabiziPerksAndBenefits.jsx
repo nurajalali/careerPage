@@ -20,6 +20,13 @@ const FabiziPerksAndBenefits = () => {
             <Heading className="Header--content">PERKS & BENEFITS</Heading>
           </Section>
         </Column>
+        <Column lg={{ span: 17, offset: 1 }} md={8} sm={4}>
+          <p>
+            In publishing and graphic design, Lorem ipsum is a placeholder text
+            commonly used to demonstrate the visual form of a document or a
+            typeface
+          </p>
+        </Column>
       </Row>
       <br />
       <Row>
