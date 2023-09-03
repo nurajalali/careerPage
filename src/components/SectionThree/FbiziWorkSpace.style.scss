@@ -3,6 +3,10 @@
     color: #0f62fe;
     margin-right: 10px;
   }
+  .Picture__main {
+    width: 100%;
+    height: 90.3%;
+  }
   @media only screen and (min-width: 1260px) {
     .Containor__workspaceSection-space {
       padding: 96px 10px 0 20px;
@@ -10,10 +14,14 @@
     .Containor__workspaceSection-desktop-flexColumn {
       display: flex;
       flex-direction: column !important;
-      gap: 1rem !important;
+      gap: 32px !important;
     }
   }
   @media only screen and (max-width: 1060px) {
+    .Picture__main {
+      width: 100%;
+      height: 95%;
+    }
     .Header__workSpace {
       font-size: 32px;
     }

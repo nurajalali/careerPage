@@ -20,10 +20,7 @@ const FabiziWorkSpace = () => {
           md={4}
           sm={0}
         >
-          <img
-            style={{ width: "100%", height: "88.3%" }}
-            src={WorkPlaceDesktop}
-          />
+          <img className="Picture__main" src={WorkPlaceDesktop} />
         </Column>
         <Column
           className="Containor__workspaceSection-tabletStyle"
