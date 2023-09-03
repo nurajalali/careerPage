@@ -5,3 +5,15 @@
 .c4p--card__footer {
   justify-content: space-between;
 }
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .Header__heading {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Header__heading {
+    font-size: 24px;
+  }
+}

@@ -42,12 +42,8 @@ const Header = () => {
               isDesktop ? "1rem" : isTablet ? "1rem" : isMobile ? "1.5rem" : ""
             }
           >
-            <Column
-              sm={4}
-              md={{ span: 8, offset: 0 }}
-              lg={{ span: 10, offset: 1 }}
-            >
-              <Section>
+            <Column sm={4} md={8} lg={{ span: 15, offset: 1 }}>
+              <Section level={1}>
                 <Heading
                   className="
               Header__heading"

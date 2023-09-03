@@ -16,12 +16,8 @@ const FabiziCulture = () => {
   return (
     <FlexGrid fullWidth className="Container__cultureSection">
       <Row>
-        <Column
-          lg={{ span: 8, offset: 1 }}
-          md={{ span: 6, offset: 0 }}
-          sm={{ span: 4, offset: 0 }}
-        >
-          <Section>
+        <Column lg={{ span: 8, offset: 1 }} md={6} sm={4}>
+          <Section level={1}>
             <Heading>
               <span className="Header__cultureSection">Fabizi</span> Culture
             </Heading>
@@ -31,7 +27,11 @@ const FabiziCulture = () => {
       <br />
       <Row>
         <Column lg={4} md={8} sm={4}>
-          <ExpressiveCard pictogram={NotebookReference} title="Team Learning">
+          <ExpressiveCard
+            pictogram={NotebookReference}
+            title="Team Learning"
+            className="ExpressiveCard__FabiziCulture--height"
+          >
             <p>
               Fabizi believes in collective growth of its team members through
               continuous learning. Our potential partners are ready to endure
@@ -43,7 +43,11 @@ const FabiziCulture = () => {
         </Column>
 
         <Column lg={4} md={8} sm={4}>
-          <ExpressiveCard pictogram={HelpDesk} title="Employee Retention">
+          <ExpressiveCard
+            pictogram={HelpDesk}
+            title="Employee Retention"
+            className="ExpressiveCard__FabiziCulture--height"
+          >
             <p>
               Fabizi is a place to grow and a home to stay. Just as we require
               high standards and dedication from our team members, we offer a
@@ -55,7 +59,11 @@ const FabiziCulture = () => {
         </Column>
 
         <Column lg={4} md={8} sm={4}>
-          <ExpressiveCard pictogram={Sight} title="A Clear Vision And Values.">
+          <ExpressiveCard
+            pictogram={Sight}
+            title="A Clear Vision And Values."
+            className="ExpressiveCard__FabiziCulture--height"
+          >
             <p>
               Be creative, but more importantly have a clear vision and a robust
               set of rules. We need people who have a clear vision of what they
@@ -67,7 +75,11 @@ const FabiziCulture = () => {
         </Column>
 
         <Column lg={4} md={8} sm={4}>
-          <ExpressiveCard pictogram={Cognitive} title="Global Mindset">
+          <ExpressiveCard
+            pictogram={Cognitive}
+            title="Global Mindset"
+            className="ExpressiveCard__FabiziCulture--height"
+          >
             <p>
               Fabizi is reaching for the global market and this means people
               involved with the project should also be capable of thinking on a
@@ -78,12 +90,13 @@ const FabiziCulture = () => {
           <br />
         </Column>
       </Row>
-      <br />
+
       <Row>
         <Column lg={4} md={8} sm={4}>
           <ExpressiveCard
             pictogram={WatsonHealthAiStatusComplete}
             title="Problem-solving Orientation"
+            className="ExpressiveCard__FabiziCulture--height"
           >
             <p>
               As a tech-based team, we face new challenges on a daily basis. Our
@@ -98,6 +111,7 @@ const FabiziCulture = () => {
           <ExpressiveCard
             pictogram={TypePattern}
             title="Diversity and Inclusion"
+            className="ExpressiveCard__FabiziCulture--height"
           >
             <p>
               Our team is made up of people of all backgrounds. Be yourself,
@@ -113,6 +127,7 @@ const FabiziCulture = () => {
           <ExpressiveCard
             pictogram={IbmWatsonAssistant}
             title="Great Communication"
+            className="ExpressiveCard__FabiziCulture--height"
           >
             <p>
               One of the defining qualities of Fabizi is transparent, clear and
@@ -128,6 +143,7 @@ const FabiziCulture = () => {
           <ExpressiveCard
             pictogram={GameConsole}
             title="Work-Life Balance and Fun"
+            className="ExpressiveCard__FabiziCulture--height"
           >
             <p>
               We take our job very seriously, have very high and strict

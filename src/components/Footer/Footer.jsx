@@ -25,7 +25,10 @@ const Footer = () => {
               <Column>
                 <Stack gap={4}>
                   <Section level={1}>
-                    <Heading>Fabizi</Heading>
+                    <Heading className="Header--content">
+                      Fabiz
+                      <span className="Header--content--styleLetter">i</span>
+                    </Heading>
                   </Section>
                   <p>
                     Fabizi is the first “real” all-in-one management solution
@@ -161,11 +164,11 @@ const Footer = () => {
               UAE, Office1602, Damas Tower, Rega Al Buteen, Al Maktoum Street,
               Deira, Dubai, PO Box: 185916
             </p>
-            <p>+971 50 142 8046</p>
+            <p className="Content__underline">+971 50 142 8046</p>
           </Stack>
-          <p>Fabizi@gmail.com</p>
+          <p className="Content__underline">Fabizi@gmail.com</p>
           <br />
-          <hr className="Content__line" />
+          <hr className="Content__mobile--line" />
         </Column>
 
         <Column lg={4} md={4} sm={4}>
@@ -175,11 +178,11 @@ const Footer = () => {
               Portugal, Estrada Nacional 4 - Retiro do Bom Gosto, N 8 7080-111
               Vendas Novas
             </p>
-            <p>+351 9200 53535</p>
+            <p className="Content__underline">+351 9200 53535</p>
           </Stack>
-          <p>Fabizi@gmail.com</p>
+          <p className="Content__underline">Fabizi@gmail.com</p>
           <br />
-          <hr className="Content__line" />
+          <hr className="Content__mobile--line" />
         </Column>
         <Column lg={{ span: 4, offset: 2 }} md={4} className="Dropdown--hide ">
           <Dropdown items={["English", "Option 2", "Option 3"]} />
@@ -187,6 +190,7 @@ const Footer = () => {
           <Dropdown items={["Dollar", "Option 2", "Option 3"]} />
         </Column>
       </Row>
+      <hr className="Content__desktop--line" />
     </FlexGrid>
   );
 };

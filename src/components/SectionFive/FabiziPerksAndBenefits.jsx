@@ -15,20 +15,30 @@ const FabiziPerksAndBenefits = () => {
   return (
     <FlexGrid fullWidth className="Conatinar">
       <Row>
-        <Column
-          lg={{ span: 8, offset: 1 }}
-          md={{ span: 6, offset: 0 }}
-          sm={{ span: 4, offset: 0 }}
-        >
+        <Column lg={{ span: 8, offset: 1 }} md={8} sm={4}>
           <Section>
-            <Heading>PERKS & BENEFITS</Heading>
+            <Heading className="Header--content">PERKS & BENEFITS</Heading>
           </Section>
         </Column>
       </Row>
       <br />
       <Row>
+        <Column lg={{ span: 14, offset: 1 }} md={8} sm={4}>
+          <p>
+            In publishing and graphic design, Lorem ipsum is a placeholder text
+            commonly used to demonstrate the visual form of a document or a
+            typeface
+          </p>
+        </Column>
+      </Row>
+      <br />
+      <Row>
         <Column lg={4} md={8} sm={4}>
-          <ExpressiveCard pictogram={LocationCompany} title="Remote Working">
+          <ExpressiveCard
+            pictogram={LocationCompany}
+            title="Remote Working"
+            className="ExpressiveCard__PerksAndBenefits--height"
+          >
             <p>
               Since the nature of our job allows it, there is a possibility of
               remote work for certain positions at Fabizi. Technological
@@ -41,7 +51,11 @@ const FabiziPerksAndBenefits = () => {
         </Column>
 
         <Column lg={4} md={8} sm={4}>
-          <ExpressiveCard pictogram={Timer} title="Time Flexibility">
+          <ExpressiveCard
+            pictogram={Timer}
+            title="Time Flexibility"
+            className="ExpressiveCard__PerksAndBenefits--height"
+          >
             <p>
               It might be a little hard to stick to a strict time schedule,
               since we all have our personal issues and matters to deal with.
@@ -55,7 +69,11 @@ const FabiziPerksAndBenefits = () => {
         </Column>
 
         <Column lg={4} md={8} sm={4}>
-          <ExpressiveCard pictogram={CropGrowth} title="Growth Potential">
+          <ExpressiveCard
+            pictogram={CropGrowth}
+            title="Growth Potential"
+            className="ExpressiveCard__PerksAndBenefits--height"
+          >
             <p>
               Fabizi is an evolving, ever-growing product that constantly seeks
               highly skilled and motivated individuals to fill the new vacant
@@ -68,7 +86,11 @@ const FabiziPerksAndBenefits = () => {
         </Column>
 
         <Column lg={4} md={8} sm={4}>
-          <ExpressiveCard pictogram={Timer} title="Competitive Compensation">
+          <ExpressiveCard
+            pictogram={Timer}
+            title="Competitive Compensation"
+            className="ExpressiveCard__PerksAndBenefits--height"
+          >
             <p>
               We believe that adequate compensation is not an act of generosity,
               but a fundamental necessity when you deal with talented people.
@@ -80,10 +102,13 @@ const FabiziPerksAndBenefits = () => {
         </Column>
       </Row>
 
-      <br />
       <Row>
         <Column lg={4} md={8} sm={4}>
-          <ExpressiveCard pictogram={Microscope} title="In-house Training">
+          <ExpressiveCard
+            pictogram={Microscope}
+            title="In-house Training"
+            className="ExpressiveCard__PerksAndBenefits--height"
+          >
             <p>
               Technology industry requires constant training, learning and
               re-learning. This could prove time consuming and expensive, but
@@ -96,7 +121,11 @@ const FabiziPerksAndBenefits = () => {
         </Column>
 
         <Column lg={4} md={8} sm={4}>
-          <ExpressiveCard pictogram={PicnicArea} title="Generous Vacations">
+          <ExpressiveCard
+            pictogram={PicnicArea}
+            title="Generous Vacations"
+            className="ExpressiveCard__PerksAndBenefits--height"
+          >
             <p>
               As our policy of maximal employee comfort dictates, we offer a
               generous vacation and sick leave plan compared with our
@@ -108,7 +137,11 @@ const FabiziPerksAndBenefits = () => {
         </Column>
 
         <Column lg={4} md={8} sm={4}>
-          <ExpressiveCard pictogram={GroupAccess} title="Team Events">
+          <ExpressiveCard
+            pictogram={GroupAccess}
+            title="Team Events"
+            className="ExpressiveCard__PerksAndBenefits--height"
+          >
             <p>
               We consider ourselves a family and this extends beyond working
               hours. We have team-building events, holiday parties, social
@@ -120,7 +153,11 @@ const FabiziPerksAndBenefits = () => {
         </Column>
 
         <Column lg={4} md={8} sm={4}>
-          <ExpressiveCard pictogram={Friendship} title="Friendly Environment">
+          <ExpressiveCard
+            pictogram={Friendship}
+            title="Friendly Environment"
+            className="ExpressiveCard__PerksAndBenefits--height"
+          >
             <p>
               Our years of experience has clearly shown us just how much
               maintaining a friendly and vibrant environment within our offices

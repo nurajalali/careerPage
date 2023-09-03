@@ -1,7 +1,11 @@
 .Containor__workspaceSection {
+  .Header__workSpace--firstWord {
+    color: #0f62fe;
+    margin-right: 10px;
+  }
   @media only screen and (min-width: 1260px) {
     .Containor__workspaceSection-space {
-      padding: 96px 10px 96px 20px;
+      padding: 96px 10px 0 20px;
     }
     .Containor__workspaceSection-desktop-flexColumn {
       display: flex;
@@ -10,6 +14,9 @@
     }
   }
   @media only screen and (max-width: 1060px) {
+    .Header__workSpace {
+      font-size: 32px;
+    }
     .Containor__workspaceSection-space {
       padding-top: 64px;
       padding-bottom: 64px;
@@ -46,6 +53,9 @@
   }
 
   @media screen and (max-width: 480px) {
+    .Header__workSpace {
+      font-size: 24px;
+    }
     .Containor__workspaceSection-space {
       padding-top: 48px;
       padding-bottom: 48px;
