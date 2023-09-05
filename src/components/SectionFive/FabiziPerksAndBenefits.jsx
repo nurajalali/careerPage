@@ -32,9 +32,9 @@ const FabiziPerksAndBenefits = () => {
       <Row>
         <Column lg={4} md={8} sm={4}>
           <ExpressiveCard
-            pictogram={LocationCompany}
+            pictogram={(props) => <LocationCompany {...props} size={32} />}
             title="Remote Working"
-            className="ExpressiveCard__PerksAndBenefits--height"
+            className="ExpressiveCard__PerksAndBenefits--height ExpressiveCard__PerksAndBenefits--color"
           >
             <p>
               Since the nature of our job allows it, there is a possibility of
@@ -49,9 +49,9 @@ const FabiziPerksAndBenefits = () => {
 
         <Column lg={4} md={8} sm={4}>
           <ExpressiveCard
-            pictogram={Timer}
+            pictogram={(props) => <Timer {...props} size={32} />}
             title="Time Flexibility"
-            className="ExpressiveCard__PerksAndBenefits--height"
+            className="ExpressiveCard__PerksAndBenefits--height ExpressiveCard__PerksAndBenefits--color"
           >
             <p>
               It might be a little hard to stick to a strict time schedule,
@@ -67,9 +67,9 @@ const FabiziPerksAndBenefits = () => {
 
         <Column lg={4} md={8} sm={4}>
           <ExpressiveCard
-            pictogram={CropGrowth}
+            pictogram={(props) => <CropGrowth {...props} size={32} />}
             title="Growth Potential"
-            className="ExpressiveCard__PerksAndBenefits--height"
+            className="ExpressiveCard__PerksAndBenefits--height ExpressiveCard__PerksAndBenefits--color"
           >
             <p>
               Fabizi is an evolving, ever-growing product that constantly seeks
@@ -84,9 +84,9 @@ const FabiziPerksAndBenefits = () => {
 
         <Column lg={4} md={8} sm={4}>
           <ExpressiveCard
-            pictogram={Timer}
+            pictogram={(props) => <Timer {...props} size={32} />}
             title="Competitive Compensation"
-            className="ExpressiveCard__PerksAndBenefits--height"
+            className="ExpressiveCard__PerksAndBenefits--height ExpressiveCard__PerksAndBenefits--color "
           >
             <p>
               We believe that adequate compensation is not an act of generosity,
@@ -102,9 +102,9 @@ const FabiziPerksAndBenefits = () => {
       <Row>
         <Column lg={4} md={8} sm={4}>
           <ExpressiveCard
-            pictogram={Microscope}
+            pictogram={(props) => <Microscope {...props} size={32} />}
             title="In-house Training"
-            className="ExpressiveCard__PerksAndBenefits--height"
+            className="ExpressiveCard__PerksAndBenefits--height ExpressiveCard__PerksAndBenefits--color"
           >
             <p>
               Technology industry requires constant training, learning and
@@ -119,9 +119,9 @@ const FabiziPerksAndBenefits = () => {
 
         <Column lg={4} md={8} sm={4}>
           <ExpressiveCard
-            pictogram={PicnicArea}
+            pictogram={(props) => <PicnicArea {...props} size={32} />}
             title="Generous Vacations"
-            className="ExpressiveCard__PerksAndBenefits--height"
+            className="ExpressiveCard__PerksAndBenefits--height ExpressiveCard__PerksAndBenefits--color"
           >
             <p>
               As our policy of maximal employee comfort dictates, we offer a
@@ -135,9 +135,9 @@ const FabiziPerksAndBenefits = () => {
 
         <Column lg={4} md={8} sm={4}>
           <ExpressiveCard
-            pictogram={GroupAccess}
+            pictogram={(props) => <GroupAccess {...props} size={32} />}
             title="Team Events"
-            className="ExpressiveCard__PerksAndBenefits--height"
+            className="ExpressiveCard__PerksAndBenefits--height ExpressiveCard__PerksAndBenefits--color"
           >
             <p>
               We consider ourselves a family and this extends beyond working
@@ -151,9 +151,9 @@ const FabiziPerksAndBenefits = () => {
 
         <Column lg={4} md={8} sm={4}>
           <ExpressiveCard
-            pictogram={Friendship}
+            pictogram={(props) => <Friendship {...props} size={32} />}
             title="Friendly Environment"
-            className="ExpressiveCard__PerksAndBenefits--height"
+            className="ExpressiveCard__PerksAndBenefits--height ExpressiveCard__PerksAndBenefits--color"
           >
             <p>
               Our years of experience has clearly shown us just how much

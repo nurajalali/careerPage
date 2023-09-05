@@ -77,7 +77,7 @@ const Header = () => {
               </Column>
             </Stack>
 
-            <Column sm={4} md={3} lg={{ span: 4, offset: 1 }}>
+            <Column sm={4} md={4} lg={{ span: 4, offset: 1 }}>
               <Button
                 className="Header__btn"
                 renderIcon={ArrowRight}

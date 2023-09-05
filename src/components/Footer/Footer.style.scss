@@ -2,7 +2,33 @@
 .Footer {
   background-color: #161616;
   padding: 48px 136px 96px 136px;
-  color: white;
+  color: #ffffff;
+
+  .Content--color {
+    color: #a8a8a8;
+  }
+  .Content__item--color {
+    color: #8d8d8d;
+  }
+
+  .Content__information--color {
+    color: #e0e0e0;
+  }
+  .Header__item--content {
+    font-weight: 400;
+  }
+  #Dropdown__language--color--change {
+    background-color: rgba(57, 57, 57, 1);
+    color: #ffffff;
+  }
+  #Dropdown__price--color--change {
+    background-color: rgba(57, 57, 57, 1);
+    color: #ffffff;
+  }
+  .Icon--space {
+    margin-left: 15px;
+    margin-right: 10px;
+  }
   .cds--grid {
     padding: 0;
   }

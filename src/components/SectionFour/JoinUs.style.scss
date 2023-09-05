@@ -10,6 +10,10 @@
   padding: 16px;
 }
 
+.ExpressiveCard--color:hover {
+  color: white;
+}
+
 @media screen and (min-width: 481px) and (max-width: 1024px) {
   .Header__heading {
     font-size: 32px;

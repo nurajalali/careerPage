@@ -1,36 +1,32 @@
 .Container__aboutFabizi {
-  padding-top: 96px;
-  padding-bottom: 96px;
+  padding: 96px 142px 96px 142px;
 }
 .Container--aboutFabizi-content {
-  padding-top: 64px;
-  padding-bottom: 64px;
+  padding: 71px 64px 71px 64px;
   align-items: center;
 }
+
 .btn {
   color: white;
-  width: 90%;
+  width: 100%;
 }
 
 @media screen and (max-width: 1036px) {
   .Container--aboutFabizi-content {
-    padding-left: 23px;
+    padding: 16px;
   }
 
   .Container__aboutFabizi {
-    padding-top: 64px;
-    padding-bottom: 64px;
+    padding: 64px 32px 64px 32px;
   }
 }
 
 @media screen and (max-width: 480px) {
   .Container--aboutFabizi-content {
-    padding-left: 23px;
-    padding-right: 23px;
+    padding: 16px;
   }
 
   .Container__aboutFabizi {
-    padding-top: 48px;
-    padding-bottom: 48px;
+    padding: 48px 16px 48px 16px;
   }
 }

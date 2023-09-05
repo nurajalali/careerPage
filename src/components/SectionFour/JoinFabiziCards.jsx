@@ -19,6 +19,7 @@ const JoinFabiziCards = ({ jobItem }) => {
             ]}
             primaryButtonText={job.Condition}
             primaryButtonKind="ghost"
+            className="ExpressiveCard--color"
           ></ExpressiveCard>
           <br />
         </Column>

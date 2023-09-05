@@ -29,9 +29,9 @@ const FabiziCulture = () => {
       <Row>
         <Column lg={4} md={8} sm={4}>
           <ExpressiveCard
-            pictogram={NotebookReference}
+            pictogram={(props) => <NotebookReference {...props} size={32} />}
             title="Team Learning"
-            className="ExpressiveCard__FabiziCulture--height"
+            className="ExpressiveCard__FabiziCulture--height ExpressiveCard__FabiziCulture--color"
           >
             <p>
               Fabizi believes in collective growth of its team members through
@@ -45,9 +45,9 @@ const FabiziCulture = () => {
 
         <Column lg={4} md={8} sm={4}>
           <ExpressiveCard
-            pictogram={HelpDesk}
+            pictogram={(props) => <HelpDesk {...props} size={32} />}
             title="Employee Retention"
-            className="ExpressiveCard__FabiziCulture--height"
+            className="ExpressiveCard__FabiziCulture--height ExpressiveCard__FabiziCulture--color"
           >
             <p>
               Fabizi is a place to grow and a home to stay. Just as we require
@@ -61,9 +61,9 @@ const FabiziCulture = () => {
 
         <Column lg={4} md={8} sm={4}>
           <ExpressiveCard
-            pictogram={Sight}
+            pictogram={(props) => <Sight {...props} size={32} />}
             title="A Clear Vision And Values."
-            className="ExpressiveCard__FabiziCulture--height"
+            className="ExpressiveCard__FabiziCulture--height ExpressiveCard__FabiziCulture--color"
           >
             <p>
               Be creative, but more importantly have a clear vision and a robust
@@ -77,9 +77,9 @@ const FabiziCulture = () => {
 
         <Column lg={4} md={8} sm={4}>
           <ExpressiveCard
-            pictogram={Cognitive}
+            pictogram={(props) => <Cognitive {...props} size={32} />}
             title="Global Mindset"
-            className="ExpressiveCard__FabiziCulture--height"
+            className="ExpressiveCard__FabiziCulture--height ExpressiveCard__FabiziCulture--color"
           >
             <p>
               Fabizi is reaching for the global market and this means people
@@ -94,9 +94,11 @@ const FabiziCulture = () => {
       <Row>
         <Column lg={4} md={8} sm={4}>
           <ExpressiveCard
-            pictogram={WatsonHealthAiStatusComplete}
+            pictogram={(props) => (
+              <WatsonHealthAiStatusComplete {...props} size={32} />
+            )}
             title="Problem-solving Orientation"
-            className="ExpressiveCard__FabiziCulture--height"
+            className="ExpressiveCard__FabiziCulture--height ExpressiveCard__FabiziCulture--color"
           >
             <p>
               As a tech-based team, we face new challenges on a daily basis. Our
@@ -109,9 +111,9 @@ const FabiziCulture = () => {
 
         <Column lg={4} md={8} sm={4}>
           <ExpressiveCard
-            pictogram={TypePattern}
+            pictogram={(props) => <TypePattern {...props} size={32} />}
             title="Diversity and Inclusion"
-            className="ExpressiveCard__FabiziCulture--height"
+            className="ExpressiveCard__FabiziCulture--height ExpressiveCard__FabiziCulture--color"
           >
             <p>
               Our team is made up of people of all backgrounds. Be yourself,
@@ -125,9 +127,9 @@ const FabiziCulture = () => {
 
         <Column lg={4} md={8} sm={4}>
           <ExpressiveCard
-            pictogram={IbmWatsonAssistant}
+            pictogram={(props) => <IbmWatsonAssistant {...props} size={32} />}
             title="Great Communication"
-            className="ExpressiveCard__FabiziCulture--height"
+            className="ExpressiveCard__FabiziCulture--height ExpressiveCard__FabiziCulture--color"
           >
             <p>
               One of the defining qualities of Fabizi is transparent, clear and
@@ -141,9 +143,9 @@ const FabiziCulture = () => {
 
         <Column lg={4} md={8} sm={4}>
           <ExpressiveCard
-            pictogram={GameConsole}
+            pictogram={(props) => <GameConsole {...props} size={32} />}
             title="Work-Life Balance and Fun"
-            className="ExpressiveCard__FabiziCulture--height"
+            className="ExpressiveCard__FabiziCulture--height ExpressiveCard__FabiziCulture--color"
           >
             <p>
               We take our job very seriously, have very high and strict
